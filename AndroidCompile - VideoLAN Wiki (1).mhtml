@@ -1,0 +1,1040 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://wiki.videolan.org/AndroidCompile/
+Subject: AndroidCompile - VideoLAN Wiki
+Date: Tue, 15 Sep 2020 14:52:59 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--4c8LsorSkJS8ZI2w8GKWJCbDRpgPfKlGbcye7fawVX----"
+
+
+------MultipartBoundary--4c8LsorSkJS8ZI2w8GKWJCbDRpgPfKlGbcye7fawVX----
+Content-Type: text/html
+Content-ID: <frame-B894D80C1605280D72CEFB2DCED55A2C@mhtml.blink>
+Content-Transfer-Encoding: binary
+Content-Location: https://wiki.videolan.org/AndroidCompile/
+
+<!DOCTYPE html><html class="client-js" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>AndroidCompile - VideoLAN Wiki</title>
+
+
+<link rel="stylesheet" href="https://wiki.videolan.org/load.php?lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles&amp;only=styles&amp;skin=vector">
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="https://wiki.videolan.org/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.34.0">
+<link rel="shortcut icon" href="https://images.videolan.org/images/icons/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://wiki.videolan.org/opensearch_desc.php" title="VideoLAN Wiki (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.videolan.org/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="VideoLAN Wiki Atom feed" href="https://wiki.videolan.org/index.php?title=Special:RecentChanges&amp;feed=atom">
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-AndroidCompile rootpage-AndroidCompile skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">AndroidCompile</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From VideoLAN Wiki</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="https://wiki.videolan.org/AndroidCompile/#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="https://wiki.videolan.org/AndroidCompile/#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>This page is an introduction to the compilation of <b>VLC for Android</b> on Linux. 
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="https://wiki.videolan.org/AndroidCompile/#Android_Studio.2C_SDK_and_NDK_installation"><span class="tocnumber">1</span> <span class="toctext">Android Studio, SDK and NDK installation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="https://wiki.videolan.org/AndroidCompile/#Requirements"><span class="tocnumber">1.1</span> <span class="toctext">Requirements</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="https://wiki.videolan.org/AndroidCompile/#Example_on_Ubuntu"><span class="tocnumber">1.1.1</span> <span class="toctext">Example on Ubuntu</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-4"><a href="https://wiki.videolan.org/AndroidCompile/#SDK_.26_Android_Studio"><span class="tocnumber">1.2</span> <span class="toctext">SDK &amp; Android Studio</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="https://wiki.videolan.org/AndroidCompile/#Android_NDK"><span class="tocnumber">1.3</span> <span class="toctext">Android NDK</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="https://wiki.videolan.org/AndroidCompile/#Environment_setup"><span class="tocnumber">2</span> <span class="toctext">Environment setup</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="https://wiki.videolan.org/AndroidCompile/#Building"><span class="tocnumber">3</span> <span class="toctext">Building</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="https://wiki.videolan.org/AndroidCompile/#Get_VLC_Source"><span class="tocnumber">3.1</span> <span class="toctext">Get VLC Source</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="https://wiki.videolan.org/AndroidCompile/#Setup_Gradle_build_system"><span class="tocnumber">3.1.1</span> <span class="toctext">Setup Gradle build system</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-10"><a href="https://wiki.videolan.org/AndroidCompile/#Devices"><span class="tocnumber">3.2</span> <span class="toctext">Devices</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="https://wiki.videolan.org/AndroidCompile/#Compile"><span class="tocnumber">3.2.1</span> <span class="toctext">Compile</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="https://wiki.videolan.org/AndroidCompile/#Build_LibVLC"><span class="tocnumber">3.2.2</span> <span class="toctext">Build LibVLC</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="https://wiki.videolan.org/AndroidCompile/#Gradle_tweaks"><span class="tocnumber">3.2.3</span> <span class="toctext">Gradle tweaks</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-14"><a href="https://wiki.videolan.org/AndroidCompile/#Run"><span class="tocnumber">3.3</span> <span class="toctext">Run</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="https://wiki.videolan.org/AndroidCompile/#Troubleshooting"><span class="tocnumber">3.4</span> <span class="toctext">Troubleshooting</span></a>
+<ul>
+<li class="toclevel-3 tocsection-16"><a href="https://wiki.videolan.org/AndroidCompile/#Compilation_error_on_Dependencies"><span class="tocnumber">3.4.1</span> <span class="toctext">Compilation error on Dependencies</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="https://wiki.videolan.org/AndroidCompile/#Debugging"><span class="tocnumber">4</span> <span class="toctext">Debugging</span></a>
+<ul>
+<li class="toclevel-2 tocsection-18"><a href="https://wiki.videolan.org/AndroidCompile/#Native_debugging"><span class="tocnumber">4.1</span> <span class="toctext">Native debugging</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-19"><a href="https://wiki.videolan.org/AndroidCompile/#Troubleshooting_2"><span class="tocnumber">5</span> <span class="toctext">Troubleshooting</span></a>
+<ul>
+<li class="toclevel-2 tocsection-20"><a href="https://wiki.videolan.org/AndroidCompile/#Outdated_Awk"><span class="tocnumber">5.1</span> <span class="toctext">Outdated Awk</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="https://wiki.videolan.org/AndroidCompile/#Can.27t_find_Ant"><span class="tocnumber">5.2</span> <span class="toctext">Can't find Ant</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="https://wiki.videolan.org/AndroidCompile/#Outdated_autotools-dev"><span class="tocnumber">5.3</span> <span class="toctext">Outdated autotools-dev</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="https://wiki.videolan.org/AndroidCompile/#autoreconf:_automake_failed_with_exit_status:_1"><span class="tocnumber">5.4</span> <span class="toctext">autoreconf: automake failed with exit status: 1</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="https://wiki.videolan.org/AndroidCompile/#autoreconf:_automake_failed_with_exit_status:_1_2"><span class="tocnumber">5.5</span> <span class="toctext">autoreconf: automake failed with exit status: 1</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="https://wiki.videolan.org/AndroidCompile/#Can.27t_run_aapt_or_adb_on_Linux_64-bit"><span class="tocnumber">5.6</span> <span class="toctext">Can't run aapt or adb on Linux 64-bit</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-26"><a href="https://wiki.videolan.org/AndroidCompile/#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+</ul>
+</div>
+
+<h2><span id="Android_Studio,_SDK_and_NDK_installation"></span><span class="mw-headline" id="Android_Studio.2C_SDK_and_NDK_installation">Android Studio, SDK and NDK installation</span></h2>
+<h3><span class="mw-headline" id="Requirements">Requirements</span></h3>
+<ul><li>You <b>MUST</b> build on Linux (or OSX if you know what you are doing).</li>
+<li>The following packages <b>MUST</b> must be installed:
+<ul><li>the GNU autotools: <i>autoconf</i>, <i>libtool</i>, <i>automake</i> and <i>make</i> (a.k.a. <i>gmake</i>)</li>
+<li>...and their dependencies: <i>m4</i> and <i>gawk</i>, <i>mawk</i> or <i>nawk</i>,</li>
+<li>the GNU C and C++ compilers a.k.a. <i>gcc</i> and <i>g++</i>,</li>
+<li>some GNU build utilities: <i>pkg-config</i> and <i>patch</i>,</li>
+<li>the following other build utilities: <i>Apache Ant</i> (or <i>Ant</i>), <i>cmake</i>, <i>protobuf</i>, <i>ragel</i>,</li>
+<li>the Subversion and Git version control systems</li>
+<li><i>unzip</i> and either <i>curl</i> or <i>wget</i> for retreiving sources.</li></ul></li>
+<li>Very recent versions of some of those tools may be required. At the time of writing, notably gettext 0.19.3 or later is required.</li>
+<li>If any of the above is missing, expect the build to fail at some point.</li>
+<li>If targeting an Android-x86 device, <i>yasm</i> must be installed too.</li></ul>
+<p>Precise lists of tools dependencies is listed <a rel="nofollow" class="external text" href="https://git.videolan.org/?p=vlc.git;a=blob;f=extras/tools/bootstrap;h=e60e5ebf93e69e7bb731e80d0fbc6ebd1226dfdb;hb=HEAD#l73">here</a>.
+</p><p><span style="color: #ff0000"><b>64-bit users</b></span>: You must install these 32-bit libs as specified here: <a href="https://wiki.videolan.org/AndroidCompile/#Can.27t_run_aapt_or_adb_on_Linux_64-bit">#Can.27t_run_aapt_or_adb_on_Linux_64-bit</a>
+</p>
+<h4><span class="mw-headline" id="Example_on_Ubuntu">Example on Ubuntu</span></h4>
+<p>Install the packages as follow:
+</p>
+<pre>sudo apt-get install automake ant autopoint cmake build-essential libtool-bin \
+     patch pkg-config protobuf-compiler ragel subversion unzip git \
+    openjdk-8-jre openjdk-8-jdk flex python wget
+</pre>
+<h3><span id="SDK_&amp;_Android_Studio"></span><span class="mw-headline" id="SDK_.26_Android_Studio">SDK &amp; Android Studio</span></h3>
+<ol><li>Go to <a rel="nofollow" class="external text" href="http://developer.android.com/sdk/index.html">Android SDK/IDE page</a>.</li>
+<li>Android Studio is recommended, but not mandatory!</li></ol>
+<h3><span class="mw-headline" id="Android_NDK">Android NDK</span></h3>
+<ol><li>Check that the SDK installation is correct.</li>
+<li>Go to the <a rel="nofollow" class="external text" href="https://developer.android.com/ndk/downloads/index.html">Android NDK page</a> and download the <b>NDK r21</b> for Linux.</li>
+<li>Decompress it to install</li></ol>
+<h2><span class="mw-headline" id="Environment_setup">Environment setup</span></h2>
+<p>Set <b>$ANDROID_SDK</b> to point to your Android SDK directory 
+</p>
+<pre>export ANDROID_SDK=/path/to/android-sdk
+</pre>
+<p>Set <b>$ANDROID_NDK</b> to point to your Android NDK directory 
+</p>
+<pre>export ANDROID_NDK=/path/to/android-ndk
+</pre>
+<p>Add some useful binaries to your <b>$PATH</b> 
+</p>
+<pre>export PATH=$PATH:$ANDROID_SDK/platform-tools:$ANDROID_SDK/tools
+</pre>
+<h2><span class="mw-headline" id="Building">Building</span></h2>
+<h3><span class="mw-headline" id="Get_VLC_Source">Get VLC Source</span></h3>
+<p>Clone the source from the VLC git!
+</p><p>In your <i>android</i> source folder, run: 
+</p>
+<pre>git clone <a rel="nofollow" class="external free" href="https://code.videolan.org/videolan/vlc-android.git">https://code.videolan.org/videolan/vlc-android.git</a>
+</pre>
+<h4><span class="mw-headline" id="Setup_Gradle_build_system">Setup Gradle build system</span></h4>
+<p>Before using Android studio to compile the app, you must run <b>compile.sh</b> once to set up gradle build system.
+</p><p>It should automatically populate mandatory local.properties and gradle.properties files with:
+</p><p><i>local.properties</i>
+</p>
+<pre>sdk.dir=&lt;SDK path from $ANDROID_SDK&gt;
+ndk.dir=&lt;NDK path from $ANDROID_NDK&gt;
+</pre>
+<p>This sets up gradle to build with correct SDK/NDK.
+</p><p>Once this first compilation has succeeded, you can build from Android Studio with the <b>Run</b> command.
+</p>
+<h3><span class="mw-headline" id="Devices">Devices</span></h3>
+<p>Find the ABI for the target device.
+</p>
+<ul><li>For a normal (2012-2015 consumer phone or tablet) device (e.g. Cortex-A8 or Cortex-A9)</li></ul>
+<pre><code>armeabi-v7a</code>
+</pre>
+<ul><li>For a Tegra2 device (no <a href="http://en.wikipedia.org/wiki/ARM_architecture#Advanced_SIMD_.28NEON.29" class="extiw" title="wikipedia:ARM architecture">NEON</a>)</li></ul>
+<pre><code>armeabi-v7a</code>
+</pre>
+<ul><li>For an ARMv6 device</li></ul>
+<pre><code>armeabi</code>
+</pre>
+<ul><li>For an ARMv6 device that does not support FPU</li></ul>
+<pre><code>armeabi-nofpu</code>
+</pre>
+<ul><li>For an ARMv5 device or the Android Emulator</li></ul>
+<pre><code>armeabi-v5</code>
+</pre>
+<ul><li>For a x86 device (e.g. Android-x86, Google TV, Logitech TV, Android x86 smartphones, etc)</li></ul>
+<pre><code>x86</code>
+</pre>
+<ul><li>For a MIPS device (i.e. Ainol Novo tablets):</li></ul>
+<pre><code>mips</code>
+</pre>
+<p>This value must be passed to the compile.sh script
+</p>
+<h4><span class="mw-headline" id="Compile">Compile</span></h4>
+<p><b>Read</b> compile.sh first, as it contains some very useful and important information. Then run it:
+</p>
+<pre>buildsystem/compile.sh -a &lt;ABI&gt;
+</pre>
+<p><b>Note:</b> At this point, you will get an auto-generated debug APK in the vlc-android/build/outputs/apk folder, signed with a debug key.
+</p><p>In order to build a non-debug (release, and <b>unsigned</b>) package:
+</p>
+<pre>buildsystem/compile.sh release
+</pre>
+<p><b>Note:</b> At this point, you will get an release APK in the same folder.
+</p>
+<h4><span class="mw-headline" id="Build_LibVLC">Build LibVLC</span></h4>
+<p>To build LibVLC, simply pass the -l option:
+</p>
+<pre>buildsystem/compile.sh -l -a &lt;ABI&gt; -r
+</pre>
+<p>.aar archive will be located in libvlc/build/outputs/aar/
+</p>
+<h4><span class="mw-headline" id="Gradle_tweaks">Gradle tweaks</span></h4>
+<p>To improve gradle execution time, try these options by writing this in gradle.properties in vlc android project.
+Or directly in your ~/.gradle/gradle.properties
+</p>
+<pre>org.gradle.parallel=true
+org.gradle.configureondemand=true
+# If you have a BUNCH of RAM available
+org.gradle.daemon=true
+org.gradle.jvmargs=-Xmx2048M
+</pre>
+<h3><span class="mw-headline" id="Run">Run</span></h3>
+<p>Run it and enjoy!
+</p>
+<h3><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h3>
+<h4><span class="mw-headline" id="Compilation_error_on_Dependencies">Compilation error on Dependencies</span></h4>
+<p>Sometimes, especially when gradle dependencies have been upgraded, the <i>compile.sh</i> will fail to refetch dependencies. Just close Android Studio and re-run the script to fix this issue.
+</p>
+<h2><span class="mw-headline" id="Debugging">Debugging</span></h2>
+<p>Here are some helpful links if you wish to debug VLC on Android:
+</p>
+<ul><li><a rel="nofollow" class="external text" href="http://developer.android.com/guide/developing/debugging/ddms.html">DDMS</a></li>
+<li><a rel="nofollow" class="external text" href="http://developer.android.com/guide/developing/tools/logcat.html">Logcat</a></li></ul>
+<h3><span class="mw-headline" id="Native_debugging">Native debugging</span></h3>
+<p>If you run VLC Android and you get a crash that looks something like this:
+</p>
+<pre>I/DEBUG   (  958): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (  958): Build fingerprint: 'MOTO/MBTCA/sesame/XT300:2.1-update1/SESLA_U3_01.71.0/110110:user/release-keys'
+I/DEBUG   (  958): pid: 1733, tid: 1733 &gt;&gt;&gt; org.videolan.vlc &lt;&lt;&lt;
+I/DEBUG   (  958): signal 11 (SIGSEGV), fault addr 4237be3c
+I/DEBUG   (  958):  r0 423640a0  r1 7ece77ac  r2 42bccdac  r3 4237be38
+I/DEBUG   (  958):  r4 00000000  r5 42bccdac  r6 002ed088  r7 002ed018
+I/DEBUG   (  958):  r8 7ece78e8  r9 2bafa844  10 0000000e  fp 7ece794c
+I/DEBUG   (  958):  ip 00002ba0  sp 7ece7784  lr 423652e4  pc 4237be3c  cpsr 60000010
+I/DEBUG   (  958):          #00  pc 0037be3c  /data/data/org.videolan.vlc/lib/libvlcjni.so
+I/DEBUG   (  958):          #01  lr 423652e4  /data/data/org.videolan.vlc/lib/libvlcjni.so
+</pre>
+<p>You have a <b>native crash</b>. To debug it, you need to have compiled VLC as above and installed it on your device. Once your compiled VLC build is on your device, you can find the <b>backtrace</b> as follows:
+</p>
+<ol><li>Make sure you are in the directory that you checked out VLC-Android in.</li>
+<li>Migrate the libvlc folders. (Do this every time the code is recompiled)
+<ol><li>cp -r libvlc/jni vlc-android</li>
+<li>cp -r libvlc/libs vlc-android</li>
+<li>cp -r libvlc/obj vlc-android</li>
+<li>(This is because the libvlc and VLC for Android folders were split yet the debugger needs the object files from both.)</li></ol></li>
+<li>cd vlc-android</li>
+<li>$ANDROID_NDK/ndk-gdb --verbose --force --start</li></ol>
+<p>At this point, lots of stuff will appear:
+</p>
+<pre>Android NDK installation path: /opt/android-ndk-r8c
+Using default adb command: /opt/android-sdk-linux_x86/platform-tools/adb
+ADB version found: Android Debug Bridge version 1.0.29
+Using ADB flags: 
+Using auto-detected project path: .
+Found package name: org.videolan.vlc
+...bunch of stuff skipped...
+GNU gdb (GDB) 7.3.1-gg2
+Copyright (C) 2011 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt;
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "--host=x86_64-linux-gnu --target=arm-linux-android".
+For bug reporting instructions, please see:
+&lt;http://www.gnu.org/software/gdb/bugs/&gt;.
+Remote debugging from host 0.0.0.0
+...bunch of stuff skipped...
+libthread_db:td_ta_new: Victory: We can debug theads!
+warning: Breakpoint address adjusted from 0x400deaa5 to 0x400deaa4.
+0x40107a40 in epoll_wait () from /media/data/vlc_android/vlc-android/obj/local/armeabi/libc.so
+(gdb)
+</pre>
+<ol start="4">
+<li>At this point, type in "continue" and press Enter.</li>
+<li>Perform the actions you did to make it crash. It will spit out something like this:</li>
+</ol>
+<pre>Program received signal SIGSEGV, Segmentation fault.
+0x401120ae in&nbsp;?? () from /media/data/vlc_android/vlc-android/obj/local/armeabi/libc.so
+</pre>
+<ol start="6">
+<li>Now, just type in "<b>bt full</b>" (excluding the quotation marks) and press Enter. That is your backtrace that you should give to the developers when they ask for it (possibly on a <a rel="nofollow" class="external text" href="http://paste.kde.org/">pastebin</a>, too).</li>
+</ol>
+<pre>(gdb) bt full
+#0  0x401120ae in&nbsp;?? () from /media/data/vlc_android/vlc-android/obj/local/armeabi/libc.so
+No symbol table info available.
+#1  0x40107bd8 in abort () from /media/data/vlc_android/vlc-android/obj/local/armeabi/libc.so
+No symbol table info available.
+#2  0x40118e6a in __assert2 () from /media/data/vlc_android/vlc-android/obj/local/armeabi/libc.so
+No symbol table info available.
+#3  0x5e0cdfdc in var_SetChecked (p_this=0x40134b94, psz_name=0x5ea2fcb8 "rate", expected_type=80, val=...) at ../../src/misc/variables.c:711
+        i_ret = 0
+        p_var = &lt;optimized out&gt;
+        oldval = {i_int = 4742037487051810480, b_bool = 176, f_float = 2.27765068e+14, psz_string = 0x574f26b0 "X\270|B\001\001", p_address = 0x574f26b0, 
+          p_object = 0x574f26b0, p_list = 0x574f26b0, i_time = 4742037487051810480, coords = {x = 1464805040, y = 1104091640}}
+        __func__ = "var_SetChecked"
+        p_priv = &lt;optimized out&gt;
+#4  0x5e06dd9c in var_SetFloat (f=1.41421354, psz_name=0x5ea2fcb8 "rate____sample_backtrace", p_obj=0x0) at ../../include/vlc_variables.h:262
+        val = &lt;optimized out&gt;
+#5  libvlc_media_player_set_rate (p_mi=0x0, rate=1.41421354) at ../../lib/media_player.c:1252
+        p_input_thread = &lt;optimized out&gt;
+#6  0x5de7bd18 in Java_org_videolan_vlc_LibVLC_setRate (env=0x41cf0470, thiz=0x8ab00021, rate=1.41421354) at jni/libvlcjni.c:678
+        mp = 0x0
+#7  0x4076de34 in&nbsp;?? ()
+No symbol table info available.
+#8  0x4076de34 in&nbsp;?? ()
+No symbol table info available.
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+</pre>
+<h2><span class="mw-headline" id="Troubleshooting_2">Troubleshooting</span></h2>
+<h3><span class="mw-headline" id="Outdated_Awk">Outdated Awk</span></h3>
+<p>If you receive the error message while building:
+</p>
+<pre>Android NDK: Host 'awk' tool is outdated. Please define HOST_AWK to point to Gawk or Nawk&nbsp;!    
+</pre>
+<p>The prebuilt version of Awk that comes with the Android NDK is outdated. Defining HOST_AWK in your environment does nothing as the system still tries to just the one that comes with the Android NDK. To get around this issue, simply rename or delete the Awk binary that comes with the Android NDK. For example to move it:
+</p>
+<pre>mv $ANDROID_NDK/prebuilt/linux-x86/bin/awk $ANDROID_NDK/prebuilt/linux-x86/bin/awk.old
+</pre>
+<h3><span id="Can't_find_Ant"></span><span class="mw-headline" id="Can.27t_find_Ant">Can't find Ant</span></h3>
+<p>If you're new to Ant, please be aware that some Linux distributions don't install it in the usual spot as with other programs. Try checking to see if the directory /usr/share/java/apache-ant/bin exists and add it to your path.
+</p>
+<h3><span class="mw-headline" id="Outdated_autotools-dev">Outdated autotools-dev</span></h3>
+<p>If you get the following error message you may have have an outdated version of autotools-dev:
+</p>
+<pre> Invalid configuration `arm-linux-androideabi': system `androideabi' not recognized
+</pre>
+<p>You may first want to check if your distribution has any available updates for this package.  Alternatively, you can manually update your config.guess and config.sub files from here: <a rel="nofollow" class="external autonumber" href="http://git.savannah.gnu.org/gitweb/?p=config.git;a=tree">[1]</a>.  These files are typically located in /usr/share/misc on Debian based distributions.
+</p>
+<h3><span class="mw-headline" id="autoreconf:_automake_failed_with_exit_status:_1">autoreconf: automake failed with exit status: 1</span></h3>
+<pre>automake: warnings are treated as errors
+configure.ac:41: warning: The 'AM_PROG_MKDIR_P' macro is deprecated, and will soon be removed.
+configure.ac:41: You should use the Autoconf-provided 'AC_PROG_MKDIR_P' macro instead,
+configure.ac:41: and use '$(MKDIR_P)' instead of '$(mkdir_p)'in your Makefile.am files.
+</pre>
+<p>If you are using Automake 1.13 or higher, you must remove -Werror from vlc/contrib/android/gnutls/configure.ac to continue. (First reported in <a rel="nofollow" class="external autonumber" href="http://forum.videolan.org/viewtopic.php?f=35&amp;t=108927">[2]</a>)
+</p>
+<h3><span class="mw-headline" id="autoreconf:_automake_failed_with_exit_status:_1_2">autoreconf: automake failed with exit status: 1</span></h3>
+<pre>make: *** [dvdnav] Error 1
+...
+... error: possibly undefined macro: AM_PROG_LIBTOOL
+</pre>
+<p>This error may occur when compiling with an older Linux distribution, such as Ubuntu 12.04, that doesn't meet bootstrap prerequisites. As of 2014-08-09, the master branch for vlc-ports/android.git <a rel="nofollow" class="external autonumber" href="http://git.videolan.org/?p=vlc-ports/android.git;a=summary">[3]</a> lacks patch 5199 <a rel="nofollow" class="external autonumber" href="https://patches.videolan.org/patch/5199/">[4]</a>. Without the patch, compile.sh builds out dated automake and autoconf that may not access libtool despite presence of a current libtool binary amongst supporting tools and a similar or more recent binary present as part of the OS.
+</p><p>To work around this error, patch the master branch or update the prerequisites. For Ubuntu 12.04, upgrade autoconf, automake, and cmake as dictated by vlc/extras/tools/bootstrap.
+</p>
+<h3><span id="Can't_run_aapt_or_adb_on_Linux_64-bit"></span><span class="mw-headline" id="Can.27t_run_aapt_or_adb_on_Linux_64-bit">Can't run aapt or adb on Linux 64-bit</span></h3>
+<p>You must install the 32-bit libraries of the following libraries, as the precompiled Google binaries depend on them: <i>libc6</i>, <i>libstdc++6</i>, and <i>zlib</i>.
+</p><p>New versions of Debian and/or Ubuntu require you to install i386 versions of packages:
+</p>
+<pre>sudo dpkg --add-architecture i386
+sudo apt-get update
+sudo apt-get install zlib1g:i386 libstdc++6:i386 libc6:i386
+</pre>
+<p>If you are under <i>old versions</i> of Ubuntu, install ia32-libs can help you solve this issue.
+</p>
+<pre>sudo apt-get install ia32-libs
+</pre>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="https://wiki.videolan.org/Android_Report_bugs/" title="Android Report bugs">Android Report bugs</a> - Bug reporting guide for VLC-Android.</li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20200315212248
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.020 seconds
+Real time usage: 0.020 seconds
+Preprocessor visited node count: 103/1000000
+Preprocessor generated node count: 0/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 3705/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key VideoLANwikidb7:pcache:idhash:4697-0!canonical and timestamp 20200315212248 and revision id 62022
+ -->
+</div></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://wiki.videolan.org/index.php?title=AndroidCompile&amp;oldid=62022">https://wiki.videolan.org/index.php?title=AndroidCompile&amp;oldid=62022</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://wiki.videolan.org/Special:Categories/" title="Special:Categories">Categories</a>: <ul><li><a href="https://wiki.videolan.org/Category:Building/" title="Category:Building">Building</a></li><li><a href="https://wiki.videolan.org/Category:Android/" title="Category:Android">Android</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="https://wiki.videolan.org/index.php?title=Special:UserLogin&amp;returnto=AndroidCompile" title="Log in to edit pages [alt-o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="https://wiki.videolan.org/AndroidCompile/" title="View the content page [alt-c]" accesskey="c">Page</a></span></li><li id="ca-talk"><span><a href="https://wiki.videolan.org/Talk:AndroidCompile/" rel="discussion" title="Discussion about the content page [alt-t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label">
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="https://wiki.videolan.org/AndroidCompile/">Read</a></span></li><li id="ca-viewsource" class="collapsible"><span><a href="https://wiki.videolan.org/index.php?title=AndroidCompile&amp;action=edit" title="This page is protected.
+You can view its source [alt-e]" accesskey="e">View source</a></span></li><li id="ca-history" class="collapsible"><span><a href="https://wiki.videolan.org/index.php?title=AndroidCompile&amp;action=history" title="Past revisions of this page [alt-h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://wiki.videolan.org/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search VideoLAN Wiki" title="Search VideoLAN Wiki [alt-f]" accesskey="f" id="searchInput"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://wiki.videolan.org/Main_Page/" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-Help_.2F_Documentation" aria-labelledby="p-Help_.2F_Documentation-label">
+			<h3 id="p-Help_.2F_Documentation-label">Help / Documentation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-Documentation"><a href="https://wiki.videolan.org/Documentation:Documentation/">Documentation</a></li><li id="n-VLC-Support-Guide"><a href="https://wiki.videolan.org/VSG:Main/">VLC Support Guide</a></li><li id="n-Forum"><a href="https://forum.videolan.org/" rel="nofollow">Forum</a></li><li id="n-Knowledge-Base"><a href="https://wiki.videolan.org/Knowledge_Base/">Knowledge Base</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-Development" aria-labelledby="p-Development-label">
+			<h3 id="p-Development-label">Development</h3>
+			<div class="body">
+								<ul>
+					<li id="n-Developers-Corner"><a href="https://wiki.videolan.org/VLC_Developers_Corner/">Developers Corner</a></li><li id="n-x264-development"><a href="https://wiki.videolan.org/Category:X264/">x264 development</a></li><li id="n-Join-the-project"><a href="https://wiki.videolan.org/Help_VideoLAN/">Join the project</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-VideoLAN_wiki" aria-labelledby="p-VideoLAN_wiki-label">
+			<h3 id="p-VideoLAN_wiki-label">VideoLAN wiki</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage"><a href="https://wiki.videolan.org/Main_Page/" title="Visit the main page [alt-z]" accesskey="z">Main Page</a></li><li id="n-About-VideoLAN"><a href="https://wiki.videolan.org/VideoLAN/">About VideoLAN</a></li><li id="n-VLC-media-player"><a href="https://wiki.videolan.org/VLC_media_player/">VLC media player</a></li><li id="n-recentchanges"><a href="https://wiki.videolan.org/Special:RecentChanges/" title="A list of recent changes in the wiki [alt-r]" accesskey="r">Recent changes</a></li><li id="n-Rules"><a href="https://wiki.videolan.org/VideoLAN_Wiki:Rules/">Rules</a></li><li id="n-Sandbox"><a href="https://wiki.videolan.org/Sandbox/">Sandbox</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="https://wiki.videolan.org/Special:WhatLinksHere/AndroidCompile/" title="A list of all wiki pages that link here [alt-j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://wiki.videolan.org/Special:RecentChangesLinked/AndroidCompile/" rel="nofollow" title="Recent changes in pages linked from this page [alt-k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="https://wiki.videolan.org/Special:SpecialPages/" title="A list of all special pages [alt-q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://wiki.videolan.org/index.php?title=AndroidCompile&amp;printable=yes" rel="alternate" title="Printable version of this page [alt-p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://wiki.videolan.org/index.php?title=AndroidCompile&amp;oldid=62022" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://wiki.videolan.org/index.php?title=AndroidCompile&amp;action=info" title="More information about this page">Page information</a></li>				</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 11 March 2020, at 15:01.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://wiki.videolan.org/VideoLAN_Wiki:Privacy_policy/" title="VideoLAN Wiki:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="https://wiki.videolan.org/VideoLAN_Wiki:About/" class="mw-redirect" title="VideoLAN Wiki:About">About VideoLAN Wiki</a></li>
+								<li id="footer-places-disclaimer"><a href="https://wiki.videolan.org/VideoLAN_Wiki:General_disclaimer/" title="VideoLAN Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="https://wiki.videolan.org/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+
+
+<!-- Cached 20200315212248 -->
+
+</body></html>
+------MultipartBoundary--4c8LsorSkJS8ZI2w8GKWJCbDRpgPfKlGbcye7fawVX----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: https://wiki.videolan.org/load.php?lang=en&modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles&only=styles&skin=vector
+
+@charset "utf-8";
+
+@media print {
+  .noprint, .catlinks, .magnify, .mw-cite-backlink, .mw-editsection, .mw-editsection-like, .mw-hidden-catlinks, .mw-indicators, .mw-redirectedfrom, .patrollink, .usermessage, #column-one, #footer-places, #mw-navigation, #siteNotice, #f-poweredbyico, #f-copyrightico, li#about, li#disclaimer, li#mobileview, li#privacy { display: none; }
+  body { background: rgb(255, 255, 255); color: rgb(0, 0, 0); margin: 0px; padding: 0px; }
+  a { background: none !important; padding: 0px !important; }
+  a, a.external, a.new, a.stub { color: inherit !important; text-decoration: inherit !important; }
+  .mw-parser-output a.external.text::after, .mw-parser-output a.external.autonumber::after { content: " (" attr(href) ")"; word-break: break-all; overflow-wrap: break-word; }
+  .mw-parser-output a.external.text[href^="//"]::after, .mw-parser-output a.external.autonumber[href^="//"]::after { content: " (https:" attr(href) ")"; }
+  dt { font-weight: bold; }
+  h1, h2, h3, h4, h5, h6 { font-weight: bold; break-after: avoid; break-before: avoid; }
+  p { margin: 1em 0px; line-height: 1.2; orphans: 3; widows: 3; }
+  img, figure, .wikitable, .thumb { break-inside: avoid; }
+  img { border: 0px; vertical-align: middle; }
+  pre, .mw-code { background: rgb(255, 255, 255); color: rgb(0, 0, 0); border: 1pt dashed rgb(0, 0, 0); padding: 1em; font-size: 8pt; white-space: pre-wrap; overflow-wrap: break-word; }
+  sup, sub { line-height: 1; }
+  ul { list-style-type: square; }
+  #globalWrapper { width: 100% !important; min-width: 0px !important; }
+  .mw-body { background: rgb(255, 255, 255); color: rgb(0, 0, 0); direction: ltr; border: 0px !important; padding: 0px !important; margin: 0px !important; }
+  #column-content { margin: 0px !important; }
+  #column-content .mw-body { padding: 1em; margin: 0px !important; }
+  .toc { background-color: rgb(249, 249, 249); border: 1pt solid rgb(170, 170, 170); padding: 5px; display: table; }
+  .tocnumber, .toctext { display: table-cell; }
+  .tocnumber { padding-left: 0px; padding-right: 0.5em; }
+  .mw-content-ltr .tocnumber { padding-left: 0px; padding-right: 0.5em; }
+  .mw-content-rtl .tocnumber { padding-left: 0.5em; padding-right: 0px; }
+  table.floatright, div.floatright, div.tright { float: right; clear: right; position: relative; }
+  table.floatleft, div.floatleft, div.tleft { float: left; clear: left; position: relative; }
+  div.tleft { margin: 0.5em 1.4em 1.3em 0px; }
+  div.tright { margin: 0.5em 0px 1.3em 1.4em; }
+  table.floatright, div.floatright { margin: 0px 0px 0.5em 0.5em; border: 0px; }
+  table.floatleft, div.floatleft { margin: 0px 0.5em 0.5em 0px; border: 0px; }
+  .center { text-align: center; }
+  div.thumb { background-color: transparent; width: auto; }
+  div.thumb a { border-bottom: 0px; }
+  div.thumbinner { background-color: rgb(255, 255, 255); border: 0px; border-radius: 2px; padding: 5px; font-size: 10pt; color: rgb(102, 102, 102); text-align: center; overflow: hidden; min-width: 100px; }
+  html .thumbcaption { text-align: left; line-height: 1.4; padding: 3px; }
+  img.thumbborder { border: 1pt solid rgb(221, 221, 221); }
+  .wikitable, .mw_metadata { background: rgb(255, 255, 255); margin: 1em 0px; border: 1pt solid rgb(170, 170, 170); border-collapse: collapse; font-size: 10pt; }
+  .wikitable > caption, .mw_metadata caption { padding: 5px; font-size: 10pt; }
+  .wikitable > tr > th, .wikitable > tr > td, .wikitable > * > tr > th, .wikitable > * > tr > td, .mw_metadata th, .mw_metadata td { border: 1pt solid rgb(170, 170, 170); padding: 0.4em 0.6em; background: rgb(255, 255, 255) !important; color: rgb(0, 0, 0) !important; }
+  .wikitable > tr > th, .wikitable > * > tr > th, .mw_metadata th { text-align: center; }
+  table.listing, table.listing td { border: 1pt solid rgb(0, 0, 0); border-collapse: collapse; }
+  .catlinks ul { display: inline; padding: 0px; list-style: none none; }
+  .catlinks li { display: inline-block; line-height: 1.15; margin: 0.1em 0px; border-left: 1pt solid rgb(170, 170, 170); padding: 0px 0.4em; }
+  .catlinks li:first-child { border-left: 0px; padding-left: 0.2em; }
+  .printfooter { padding: 1em 0px; }
+  #footer { background: rgb(255, 255, 255); color: rgb(0, 0, 0); margin-top: 1em; border-top: 1pt solid rgb(170, 170, 170); padding-top: 5px; direction: ltr; }
+}
+
+@media screen {
+  .mw-content-ltr { direction: ltr; }
+  .mw-content-rtl { direction: rtl; }
+  .sitedir-ltr textarea, .sitedir-ltr input { direction: ltr; }
+  .sitedir-rtl textarea, .sitedir-rtl input { direction: rtl; }
+  .mw-userlink { unicode-bidi: embed; }
+  mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+  wbr { display: inline-block; }
+  input[type="submit"], input[type="button"], input[type="reset"], input[type="file"] { direction: ltr; }
+  textarea[dir="ltr"], input[dir="ltr"] { direction: ltr; }
+  textarea[dir="rtl"], input[dir="rtl"] { direction: rtl; }
+  abbr[title], .explain[title] { border-bottom: 1px dotted; cursor: help; }
+  @supports (text-decoration:underline dotted) {
+  abbr[title], .explain[title] { border-bottom: 0px; text-decoration: underline dotted; }
+}
+  span.comment { font-style: italic; unicode-bidi: isolate; }
+  #editform, #toolbar, #wpTextbox1 { clear: both; }
+  #toolbar { height: 22px; }
+  .mw-underline-always a { text-decoration: underline; }
+  .mw-underline-never a { text-decoration: none; }
+  li span.deleted, span.history-deleted { text-decoration: line-through; color: rgb(114, 119, 125); font-style: italic; }
+  .not-patrolled { background-color: rgb(255, 255, 170); }
+  .unpatrolled { font-weight: bold; color: rgb(221, 51, 51); }
+  div.patrollink { font-size: 75%; text-align: right; }
+  td.mw-label { text-align: right; vertical-align: middle; }
+  td.mw-input { text-align: left; }
+  td.mw-submit { text-align: left; white-space: nowrap; }
+  .mw-input-with-label { white-space: nowrap; display: inline-block; }
+  .mw-content-ltr .thumbcaption { text-align: left; }
+  .mw-content-ltr .magnify { float: right; }
+  .mw-content-rtl .thumbcaption { text-align: right; }
+  .mw-content-rtl .magnify { float: left; }
+  #catlinks { text-align: left; }
+  .catlinks ul { display: inline; margin: 0px; padding: 0px; list-style: none none; }
+  .catlinks li { display: inline-block; line-height: 1.25em; border-left: 1px solid rgb(162, 169, 177); margin: 0.125em 0px; padding: 0px 0.5em; zoom: 1; }
+  .catlinks li:first-child { padding-left: 0.25em; border-left: 0px; }
+  .catlinks li a.mw-redirect { font-style: italic; }
+  .mw-hidden-cats-hidden { display: none; }
+  .catlinks-allhidden { display: none; }
+  p.mw-protect-editreasons, p.mw-filedelete-editreasons, p.mw-delete-editreasons { font-size: 90%; text-align: right; }
+  .autocomment, .autocomment a, .autocomment a:visited { color: rgb(114, 119, 125); }
+  .newpage, .minoredit, .botedit { font-weight: bold; }
+  div.mw-warning-with-logexcerpt { padding: 3px; margin-bottom: 3px; border: 2px solid rgb(42, 75, 141); clear: both; }
+  div.mw-warning-with-logexcerpt ul li { font-size: 90%; }
+  span.mw-revdelundel-link, strong.mw-revdelundel-link { font-size: 90%; }
+  span.mw-revdelundel-hidden, input.mw-revdelundel-hidden { visibility: hidden; }
+  td.mw-revdel-checkbox, th.mw-revdel-checkbox { padding-right: 10px; text-align: center; }
+  a.new { color: rgb(186, 0, 0); }
+  .plainlinks a.external { background: none !important; padding: 0px !important; }
+  .rtl a.external.free, .rtl a.external.autonumber { direction: ltr; unicode-bidi: embed; }
+  .wikitable { background-color: rgb(248, 249, 250); color: rgb(34, 34, 34); margin: 1em 0px; border: 1px solid rgb(162, 169, 177); border-collapse: collapse; }
+  .wikitable > tr > th, .wikitable > tr > td, .wikitable > * > tr > th, .wikitable > * > tr > td { border: 1px solid rgb(162, 169, 177); padding: 0.2em 0.4em; }
+  .wikitable > tr > th, .wikitable > * > tr > th { background-color: rgb(234, 236, 240); text-align: center; }
+  .wikitable > caption { font-weight: bold; }
+  .error, .warning, .success { font-size: larger; }
+  .error { color: rgb(221, 51, 51); }
+  .warning { color: rgb(172, 102, 0); }
+  .success { color: rgb(20, 134, 109); }
+  .messagebox, .errorbox, .warningbox, .successbox { color: rgb(0, 0, 0); margin-bottom: 1em; border: 1px solid; padding: 0.5em 1em; }
+  .messagebox h2, .errorbox h2, .warningbox h2, .successbox h2 { color: inherit; display: inline; margin: 0px 0.5em 0px 0px; border: 0px; font-size: 1em; font-weight: bold; }
+  .messagebox { background-color: rgb(234, 236, 240); border-color: rgb(162, 169, 177); }
+  .errorbox { background-color: rgb(254, 231, 230); border-color: rgb(221, 51, 51); }
+  .warningbox { background-color: rgb(254, 246, 231); border-color: rgb(255, 204, 51); }
+  .successbox { background-color: rgb(213, 253, 244); border-color: rgb(20, 134, 109); }
+  .mw-infobox { border: 2px solid rgb(255, 204, 51); margin: 0.5em; clear: left; overflow: hidden; }
+  .mw-infobox-left { margin: 7px; float: left; width: 35px; }
+  .mw-infobox-right { margin: 0.5em 0.5em 0.5em 49px; }
+  .previewnote { margin-bottom: 1em; }
+  .visualClear { clear: both; }
+  .mw-datatable { border: 1px solid rgb(162, 169, 177); border-collapse: collapse; }
+  .mw-datatable td, .mw-datatable th { border: 1px solid rgb(162, 169, 177); padding: 0.2em 0.4em; }
+  .mw-datatable th { background-color: rgb(234, 238, 255); }
+  .mw-datatable td { background-color: rgb(255, 255, 255); }
+  .mw-datatable tr:hover td { background-color: rgb(234, 243, 255); }
+  .mw-content-ltr ul, .mw-content-rtl .mw-content-ltr ul { margin: 0.3em 0px 0px 1.6em; padding: 0px; }
+  .mw-content-rtl ul, .mw-content-ltr .mw-content-rtl ul { margin: 0.3em 1.6em 0px 0px; padding: 0px; }
+  .mw-content-ltr ol, .mw-content-rtl .mw-content-ltr ol { margin: 0.3em 0px 0px 3.2em; padding: 0px; }
+  .mw-content-rtl ol, .mw-content-ltr .mw-content-rtl ol { margin: 0.3em 3.2em 0px 0px; padding: 0px; }
+  .mw-content-ltr dd, .mw-content-rtl .mw-content-ltr dd { margin-left: 1.6em; margin-right: 0px; }
+  .mw-content-rtl dd, .mw-content-ltr .mw-content-rtl dd { margin-right: 1.6em; margin-left: 0px; }
+  .mw-ajax-loader { background-image: url("/resources/src/mediawiki.legacy/images/ajax-loader.gif?57f34"); background-position: center center; background-repeat: no-repeat; padding: 16px; position: relative; top: -16px; }
+  .mw-small-spinner { margin-right: 0.6em; background-image: url("/resources/src/mediawiki.legacy/images/spinner.gif?ca65b"); background-position: center center; background-repeat: no-repeat; padding: 10px !important; }
+  h1:lang(anp), h1:lang(as), h1:lang(bh), h1:lang(bho), h1:lang(bn), h1:lang(gu), h1:lang(hi), h1:lang(kn), h1:lang(ks), h1:lang(ml), h1:lang(mr), h1:lang(my), h1:lang(mai), h1:lang(ne), h1:lang(new), h1:lang(or), h1:lang(pa), h1:lang(pi), h1:lang(sa), h1:lang(ta), h1:lang(te) { line-height: 1.6em !important; }
+  h2:lang(anp), h3:lang(anp), h4:lang(anp), h5:lang(anp), h6:lang(anp), h2:lang(as), h3:lang(as), h4:lang(as), h5:lang(as), h6:lang(as), h2:lang(bho), h3:lang(bho), h4:lang(bho), h5:lang(bho), h6:lang(bho), h2:lang(bh), h3:lang(bh), h4:lang(bh), h5:lang(bh), h6:lang(bh), h2:lang(bn), h3:lang(bn), h4:lang(bn), h5:lang(bn), h6:lang(bn), h2:lang(gu), h3:lang(gu), h4:lang(gu), h5:lang(gu), h6:lang(gu), h2:lang(hi), h3:lang(hi), h4:lang(hi), h5:lang(hi), h6:lang(hi), h2:lang(kn), h3:lang(kn), h4:lang(kn), h5:lang(kn), h6:lang(kn), h2:lang(ks), h3:lang(ks), h4:lang(ks), h5:lang(ks), h6:lang(ks), h2:lang(ml), h3:lang(ml), h4:lang(ml), h5:lang(ml), h6:lang(ml), h2:lang(mr), h3:lang(mr), h4:lang(mr), h5:lang(mr), h6:lang(mr), h2:lang(my), h3:lang(my), h4:lang(my), h5:lang(my), h6:lang(my), h2:lang(mai), h3:lang(mai), h4:lang(mai), h5:lang(mai), h6:lang(mai), h2:lang(ne), h3:lang(ne), h4:lang(ne), h5:lang(ne), h6:lang(ne), h2:lang(new), h3:lang(new), h4:lang(new), h5:lang(new), h6:lang(new), h2:lang(or), h3:lang(or), h4:lang(or), h5:lang(or), h6:lang(or), h2:lang(pa), h3:lang(pa), h4:lang(pa), h5:lang(pa), h6:lang(pa), h2:lang(pi), h3:lang(pi), h4:lang(pi), h5:lang(pi), h6:lang(pi), h2:lang(sa), h3:lang(sa), h4:lang(sa), h5:lang(sa), h6:lang(sa), h2:lang(ta), h3:lang(ta), h4:lang(ta), h5:lang(ta), h6:lang(ta), h2:lang(te), h3:lang(te), h4:lang(te), h5:lang(te), h6:lang(te) { line-height: 1.2em; }
+  ol:lang(azb) li, ol:lang(bcc) li, ol:lang(bgn) li, ol:lang(bqi) li, ol:lang(fa) li, ol:lang(glk) li, ol:lang(kk-arab) li, ol:lang(lrc) li, ol:lang(luz) li, ol:lang(mzn) li { list-style-type: persian; }
+  ol:lang(ckb) li, ol:lang(sdh) li { list-style-type: arabic-indic; }
+  ol:lang(hi) li, ol:lang(mai) li, ol:lang(mr) li, ol:lang(ne) li { list-style-type: devanagari; }
+  ol:lang(as) li, ol:lang(bn) li { list-style-type: bengali; }
+  ol:lang(or) li { list-style-type: oriya; }
+  .toc ul { margin: 0.3em 0px; }
+  .mw-content-ltr .toc ul, .mw-content-rtl .mw-content-ltr .toc ul { text-align: left; }
+  .mw-content-rtl .toc ul, .mw-content-ltr .mw-content-rtl .toc ul { text-align: right; }
+  .mw-content-ltr .toc ul ul, .mw-content-rtl .mw-content-ltr .toc ul ul { margin: 0px 0px 0px 2em; }
+  .mw-content-rtl .toc ul ul, .mw-content-ltr .mw-content-rtl .toc ul ul { margin: 0px 2em 0px 0px; }
+  .toc .toctitle { direction: ltr; }
+  #mw-clearyourcache, #mw-sitecsspreview, #mw-sitejspreview, #mw-usercsspreview, #mw-userjspreview { direction: ltr; unicode-bidi: embed; }
+  #mw-revision-info, #mw-revision-info-current, #mw-revision-nav { direction: ltr; }
+  div.tright, div.floatright, table.floatright { clear: right; float: right; }
+  div.tleft, div.floatleft, table.floatleft { float: left; clear: left; }
+  div.floatright, table.floatright, div.floatleft, table.floatleft { position: relative; }
+  #mw-credits a { unicode-bidi: embed; }
+  .printfooter { display: none; }
+  .xdebug-error { position: absolute; z-index: 99; }
+  .mw-editsection { user-select: none; }
+  .mw-editsection, .mw-editsection-like { font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; }
+  .mw-content-ltr .mw-editsection, .mw-content-rtl .mw-content-ltr .mw-editsection { margin-left: 1em; }
+  .mw-content-rtl .mw-editsection, .mw-content-ltr .mw-content-rtl .mw-editsection { margin-right: 1em; }
+  sup, sub { line-height: 1; }
+}
+
+@media screen {
+  a { text-decoration: none; color: rgb(6, 69, 173); background: none; }
+  a:not([href]) { cursor: pointer; }
+  a:visited { color: rgb(11, 0, 128); }
+  a:active { color: rgb(250, 167, 0); }
+  a:hover, a:focus { text-decoration: underline; }
+  a:lang(ar), a:lang(kk-arab), a:lang(mzn), a:lang(ps), a:lang(ur) { text-decoration: none; }
+  a.stub { color: rgb(119, 34, 51); }
+  a.new, #p-personal a.new { color: rgb(186, 0, 0); }
+  a.mw-selflink { color: inherit; font-weight: bold; text-decoration: inherit; }
+  a.mw-selflink:hover { cursor: inherit; text-decoration: inherit; }
+  a.mw-selflink:active, a.mw-selflink:visited { color: inherit; }
+  a.new:visited, #p-personal a.new:visited { color: rgb(165, 88, 88); }
+  .mw-parser-output a.extiw, .mw-parser-output a.extiw:active { color: rgb(51, 102, 187); }
+  .mw-parser-output a.extiw:visited { color: rgb(102, 51, 102); }
+  .mw-parser-output a.extiw:active { color: rgb(187, 102, 51); }
+  .mw-parser-output a.external { color: rgb(51, 102, 187); }
+  .mw-parser-output a.external:visited { color: rgb(102, 51, 102); }
+  .mw-parser-output a.external:active { color: rgb(187, 102, 51); }
+  .mw-parser-output a.external.free { overflow-wrap: break-word; }
+  img { border: 0px; vertical-align: middle; }
+  hr { height: 1px; background-color: rgb(162, 169, 177); border: 0px; margin: 0.2em 0px; }
+  h1, h2, h3, h4, h5, h6 { color: rgb(0, 0, 0); background: none; font-weight: normal; margin: 0px; overflow: hidden; padding-top: 0.5em; padding-bottom: 0.17em; border-bottom: 1px solid rgb(162, 169, 177); }
+  h1 { font-size: 188%; }
+  h2 { font-size: 150%; }
+  h3, h4, h5, h6 { border-bottom: 0px; font-weight: bold; }
+  h3 { font-size: 128%; }
+  h4 { font-size: 116%; }
+  h5 { font-size: 108%; }
+  h6 { font-size: 100%; }
+  h1, h2 { margin-bottom: 0.6em; }
+  h3, h4, h5 { margin-bottom: 0.3em; }
+  p { margin: 0.4em 0px 0.5em; }
+  p img { margin: 0px; }
+  ul { margin: 0.3em 0px 0px 1.6em; padding: 0px; }
+  ol { margin: 0.3em 0px 0px 3.2em; padding: 0px; list-style-image: none; }
+  li { margin-bottom: 0.1em; }
+  dt { font-weight: bold; margin-bottom: 0.1em; }
+  dl { margin-top: 0.2em; margin-bottom: 0.5em; }
+  dd { margin-left: 1.6em; margin-bottom: 0.1em; }
+  pre, code, tt, kbd, samp, .mw-code { font-family: monospace, monospace; }
+  code { color: rgb(0, 0, 0); background-color: rgb(248, 249, 250); border: 1px solid rgb(234, 236, 240); border-radius: 2px; padding: 1px 4px; }
+  pre, .mw-code { color: rgb(0, 0, 0); background-color: rgb(248, 249, 250); border: 1px solid rgb(234, 236, 240); padding: 1em; white-space: pre-wrap; }
+  table { font-size: 100%; }
+  fieldset { border: 1px solid rgb(42, 75, 141); margin: 1em 0px; padding: 0px 1em 1em; }
+  fieldset.nested { margin: 0px 0px 0.5em; padding: 0px 0.5em 0.5em; }
+  legend { padding: 0.5em; font-size: 95%; }
+  form { border: 0px; margin: 0px; }
+  textarea { width: 100%; padding: 0.1em; display: block; box-sizing: border-box; }
+  .center { width: 100%; text-align: center; }
+  .center * { margin-left: auto; margin-right: auto; }
+  .small { font-size: 94%; }
+  table.small { font-size: 100%; }
+  .toc, .mw-warning, .toccolours { border: 1px solid rgb(162, 169, 177); background-color: rgb(248, 249, 250); padding: 5px; font-size: 95%; }
+  .toc { display: table; zoom: 1; padding: 7px; }
+  table.toc { border-collapse: collapse; }
+  table.toc td { padding: 0px; }
+  .toc h2 { display: inline; border: 0px; padding: 0px; font-size: 100%; font-weight: bold; }
+  .toc .toctitle { text-align: center; }
+  .toc ul { list-style-type: none; list-style-image: none; margin-left: 0px; padding: 0px; text-align: left; }
+  .toc ul ul { margin: 0px 0px 0px 2em; }
+  .tocnumber, .toctext { display: table-cell; text-decoration: inherit; }
+  .tocnumber { padding-left: 0px; padding-right: 0.5em; color: rgb(34, 34, 34); }
+  .mw-content-ltr .tocnumber { padding-left: 0px; padding-right: 0.5em; }
+  .mw-content-rtl .tocnumber { padding-left: 0.5em; padding-right: 0px; }
+  .mw-warning { margin-left: 50px; margin-right: 50px; text-align: center; }
+  div.floatright, table.floatright { margin: 0px 0px 0.5em 0.5em; }
+  div.floatleft, table.floatleft { margin: 0px 0.5em 0.5em 0px; }
+  div.thumb { margin-bottom: 0.5em; width: auto; background-color: transparent; }
+  div.thumbinner { border: 1px solid rgb(200, 204, 209); padding: 3px; background-color: rgb(248, 249, 250); font-size: 94%; text-align: center; overflow: hidden; }
+  html .thumbimage { background-color: rgb(255, 255, 255); border: 1px solid rgb(200, 204, 209); }
+  html .thumbcaption { border: 0px; line-height: 1.4em; padding: 3px; font-size: 94%; text-align: left; }
+  div.magnify { float: right; margin-left: 3px; }
+  div.magnify a { display: block; text-indent: 15px; white-space: nowrap; overflow: hidden; width: 15px; height: 11px; background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2215%22 height=%2211%22 viewBox=%220 0 11 15%22%3E %3Cg id=%22magnify-clip%22 fill=%22%23fff%22 stroke=%22%23000%22%3E %3Cpath id=%22bigbox%22 d=%22M1.509 1.865h10.99v7.919H1.509z%22/%3E %3Cpath id=%22smallbox%22 d=%22M-1.499 6.868h5.943v4.904h-5.943z%22/%3E %3C/g%3E %3C/svg%3E"); user-select: none; }
+  img.thumbborder { border: 1px solid rgb(234, 236, 240); }
+  .mw-content-ltr .thumbcaption { text-align: left; }
+  .mw-content-ltr .magnify { float: right; margin-left: 3px; margin-right: 0px; }
+  .mw-content-ltr div.magnify a { background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2215%22 height=%2211%22 viewBox=%220 0 11 15%22%3E %3Cg id=%22magnify-clip%22 fill=%22%23fff%22 stroke=%22%23000%22%3E %3Cpath id=%22bigbox%22 d=%22M1.509 1.865h10.99v7.919H1.509z%22/%3E %3Cpath id=%22smallbox%22 d=%22M-1.499 6.868h5.943v4.904h-5.943z%22/%3E %3C/g%3E %3C/svg%3E"); }
+  .mw-content-rtl .thumbcaption { text-align: right; }
+  .mw-content-rtl .magnify { float: left; margin-left: 0px; margin-right: 3px; }
+  .mw-content-rtl div.magnify a { background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2215%22 height=%2211%22 viewBox=%220 0 11 15%22%3E %3Cg id=%22magnify-clip%22 fill=%22%23fff%22 stroke=%22%23000%22%3E %3Cpath id=%22bigbox%22 d=%22M9.491 1.865h-10.99v7.919h10.99z%22/%3E %3Cpath id=%22smallbox%22 d=%22M12.499 6.868H6.556v4.904h5.943z%22/%3E %3C/g%3E %3C/svg%3E"); }
+  div.tright { margin: 0.5em 0px 1.3em 1.4em; }
+  div.tleft { margin: 0.5em 1.4em 1.3em 0px; }
+  body.mw-hide-empty-elt .mw-empty-elt { display: none; }
+  .catlinks { border: 1px solid rgb(162, 169, 177); background-color: rgb(248, 249, 250); padding: 5px; margin-top: 1em; clear: both; }
+  textarea { border: 1px solid rgb(200, 204, 209); }
+  .editOptions { background-color: rgb(234, 236, 240); color: rgb(34, 34, 34); border-width: 0px 1px 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-color: rgb(200, 204, 209); border-bottom-color: rgb(200, 204, 209); border-left-color: rgb(200, 204, 209); border-image: initial; border-top-style: initial; border-top-color: initial; padding: 1em 1em 1.5em; margin-bottom: 2em; }
+  .usermessage { background-color: rgb(255, 206, 123); border: 1px solid rgb(255, 165, 0); color: rgb(0, 0, 0); font-weight: bold; margin: 2em 0px 1em; padding: 0.5em 1em; vertical-align: middle; }
+  #siteNotice { position: relative; text-align: center; margin: 0px; }
+  #localNotice { margin-bottom: 0.9em; }
+  .firstHeading { margin-bottom: 0.1em; line-height: 1.2em; padding-bottom: 0px; }
+  #siteSub { display: none; }
+  #contentSub, #contentSub2 { font-size: 84%; line-height: 1.2em; margin: 0px 0px 1.4em 1em; color: rgb(84, 89, 93); width: auto; }
+  span.subpages { display: block; }
+}
+
+.mw-wiki-logo { background-image: url("/resources/assets/vlc_wiki.png?6af4a"); }
+
+.toctogglecheckbox:checked ~ ul { display: none; }
+
+@media screen {
+  :not(:checked) > .toctogglecheckbox { position: absolute; opacity: 0; z-index: -1; display: inline !important; }
+  .toctogglespan { font-size: 94%; }
+  :not(:checked) > .toctogglespan::before { content: " ["; }
+  :not(:checked) > .toctogglespan::after { content: "]"; }
+  .toctogglelabel { cursor: pointer; color: rgb(6, 69, 173); }
+  .toctogglelabel:hover { text-decoration: underline; }
+  .toctogglecheckbox:focus + .toctitle .toctogglelabel { text-decoration: underline; outline: -webkit-focus-ring-color auto; }
+  .toctogglecheckbox:checked + .toctitle .toctogglelabel::after { content: "show"; }
+  .toctogglecheckbox:not(:checked) + .toctitle .toctogglelabel::after { content: "hide"; }
+}
+
+@media print {
+  .toctogglecheckbox:checked + .toctitle { display: none; }
+}
+
+@media screen {
+  html { font-size: 100%; }
+  html, body { height: 100%; margin: 0px; padding: 0px; font-family: sans-serif; }
+  body { background-color: rgb(246, 246, 246); }
+  .mw-body, .parsoid-body { background-color: rgb(255, 255, 255); color: rgb(34, 34, 34); padding: 1em; direction: ltr; }
+  .mw-body, #mw-data-after-content { margin-left: 10em; }
+  .mw-body { border-width: 1px 0px 1px 1px; border-style: solid; border-color: rgb(167, 215, 249); border-image: initial; margin-top: -1px; }
+  .mw-body h1, .mw-body-content h1, .mw-body-content h2 { margin-bottom: 0.25em; padding: 0px; font-family: "Linux Libertine", Georgia, Times, serif; line-height: 1.3; }
+  .mw-body h1:lang(ja), .mw-body-content h1:lang(ja), .mw-body-content h2:lang(ja), .mw-body h1:lang(he), .mw-body-content h1:lang(he), .mw-body-content h2:lang(he), .mw-body h1:lang(ko), .mw-body-content h1:lang(ko), .mw-body-content h2:lang(ko) { font-family: sans-serif; }
+  .mw-body h1:lang(my), .mw-body-content h1:lang(my), .mw-body-content h2:lang(my) { line-height: normal; }
+  .mw-body h1, .mw-body-content h1 { font-size: 1.8em; }
+  .mw-body .firstHeading { overflow: visible; }
+  .mw-body .mw-indicators { float: right; font-size: 0.875em; line-height: 1.6; position: relative; z-index: 1; }
+  .mw-body .mw-indicator { display: inline-block; zoom: 1; }
+  .mw-body-content { position: relative; font-size: 0.875em; line-height: 1.6; z-index: 0; }
+  .mw-body-content p { margin: 0.5em 0px; }
+  .mw-body-content h1 { margin-top: 1em; }
+  .mw-body-content h2 { margin-top: 1em; font-size: 1.5em; }
+  .mw-body-content h3, .mw-body-content h4, .mw-body-content h5, .mw-body-content h6 { margin-top: 0.3em; margin-bottom: 0px; padding-bottom: 0px; line-height: 1.6; }
+  .mw-body-content h3 { font-size: 1.2em; }
+  .mw-body-content h3, .mw-body-content h4 { font-weight: bold; }
+  .mw-body-content h4, .mw-body-content h5, .mw-body-content h6 { font-size: 100%; }
+  .mw-body-content .toc h2 { font-family: sans-serif; font-size: 100%; }
+  .mw-editsection, .mw-editsection-like { font-family: sans-serif; }
+  div.emptyPortlet { display: none; }
+  ul { list-style-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%225%22 height=%2213%22%3E %3Ccircle cx=%222.5%22 cy=%229%22 r=%222.5%22 fill=%22%23222%22/%3E %3C/svg%3E"); }
+  pre, .mw-code { line-height: 1.3; }
+  #siteNotice { font-size: 0.8em; }
+  #p-personal { position: absolute; top: 0.33em; right: 0.75em; z-index: 100; }
+  #p-personal h3 { display: none; }
+  #p-personal ul { list-style: none none; margin: 0px; padding-left: 10em; }
+  #p-personal li { float: left; margin-left: 0.75em; padding-top: 0.5em; font-size: 0.75em; line-height: 1.16667; white-space: nowrap; }
+  #pt-anonuserpage, #pt-userpage a { background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E %3Cg fill=%22%2354595d%22%3E %3Cpath d=%22M10 11c-5.92 0-8 3-8 5v3h16v-3c0-2-2.08-5-8-5z%22/%3E %3Ccircle cx=%2210%22 cy=%225.5%22 r=%224.5%22/%3E %3C/g%3E %3C/svg%3E"); background-position: left 0.333333em; background-repeat: no-repeat; background-size: 1.16667em 1.16667em; padding-top: 0.5em !important; padding-left: 16px !important; }
+  #pt-userpage { padding-top: 0px !important; }
+  #pt-userpage a { display: inline-block; }
+  #pt-anonuserpage { color: rgb(84, 89, 93); }
+  #p-search { float: left; margin-right: 0.5em; margin-left: 0.5em; }
+  #p-search h3 { display: block; clip: rect(1px, 1px, 1px, 1px); width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; position: absolute !important; }
+  #p-search form { margin: 0.5em 0px 0px; }
+  #simpleSearch { display: block; width: 20vw; min-width: 5em; max-width: 20em; height: 100%; margin-top: 0px; position: relative; min-height: 1px; }
+  #simpleSearch input { background-color: rgba(0, 0, 0, 0); color: rgb(0, 0, 0); margin: 0px; }
+  #searchInput { width: 100%; box-sizing: border-box; border: 1px solid rgb(162, 169, 177); border-radius: 2px; padding: 0.4em 1.84615em 0.4em 0.4em; box-shadow: transparent 0px 0px 0px 1px inset; font-size: 0.8125em; direction: ltr; transition: border-color 250ms ease 0s, box-shadow 250ms ease 0s; appearance: textfield; }
+  #simpleSearch:hover #searchInput { border-color: rgb(114, 119, 125); }
+  #searchInput:focus, #simpleSearch:hover #searchInput:focus { outline: 0px; border-color: rgb(51, 102, 204); box-shadow: rgb(51, 102, 204) 0px 0px 0px 1px inset, rgb(255, 255, 255) 0px 0px 0px 2px inset; }
+  #searchInput::-webkit-input-placeholder { color: rgb(114, 119, 125); opacity: 1; }
+  #searchInput::placeholder { color: rgb(114, 119, 125); opacity: 1; }
+  #searchInput::-webkit-search-decoration, #searchInput::-webkit-search-cancel-button, #searchInput::-webkit-search-results-button, #searchInput::-webkit-search-results-decoration { appearance: textfield; }
+  #searchButton, #mw-searchButton { position: absolute; top: 1px; bottom: 1px; right: 1px; min-width: 24px; width: 1.84615em; border: 0px; padding: 0px; cursor: pointer; font-size: 0.8125em; direction: ltr; text-indent: -99999px; white-space: nowrap; overflow: hidden; z-index: 1; }
+  #searchButton { background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2213%22%3E %3Cg fill=%22none%22 stroke=%22%2354595d%22 stroke-width=%222%22%3E %3Cpath d=%22M11.29 11.71l-4-4%22/%3E %3Ccircle cx=%225%22 cy=%225%22 r=%224%22/%3E %3C/g%3E %3C/svg%3E"); background-position: center center; background-repeat: no-repeat; }
+  #mw-searchButton { z-index: 1; }
+  .vectorTabs { background-position: left bottom; float: left; height: 2.5em; padding-left: 1px; }
+  .vectorTabs h3 { display: none; }
+  .vectorTabs ul { float: left; height: 100%; list-style: none none; margin: 0px; padding: 0px; }
+  .vectorTabs li { background-image: linear-gradient(to top, rgb(119, 193, 246) 0px, rgb(232, 242, 248) 1px, rgb(255, 255, 255) 100%); background-position: left bottom; background-repeat: repeat-x; float: left; display: block; height: 100%; margin: 0px; padding: 0px; line-height: 1.125em; white-space: nowrap; }
+  .vectorTabs li a { color: rgb(6, 69, 173); display: block; height: 1.9em; padding-left: 0.615em; padding-right: 0.615em; cursor: pointer; font-size: 0.8125em; }
+  .vectorTabs .new a, .vectorTabs .new a:visited { color: rgb(165, 88, 88); }
+  .vectorTabs .selected { background: rgb(255, 255, 255); }
+  .vectorTabs .selected a, .vectorTabs .selected a:visited { color: rgb(34, 34, 34); text-decoration: none; }
+  .vectorTabs .icon a { background-position: right bottom; background-repeat: no-repeat; }
+  .vectorTabs span { background-position: right bottom; display: inline-block; height: 100%; }
+  .vectorTabs span a { float: left; display: block; position: relative; padding-top: 1.25em; }
+  .vectorMenu { direction: ltr; float: left; cursor: pointer; position: relative; line-height: 1.125em; }
+  .vectorMenu h3 span { color: rgb(68, 68, 68); position: relative; display: block; padding-left: 0.615em; padding-top: 1.25em; padding-right: 16px; font-size: 0.8125em; font-weight: normal; }
+  .vectorMenu h3 span::after { content: ""; position: absolute; top: 1.25em; right: 0px; bottom: 0px; left: 0px; background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 12 12%22%3E %3Cpath d=%22M11.05 3.996l-.965-1.053-4.035 3.86-3.947-3.86L1.05 3.996l5 5 5-5%22 fill=%22%23222%22/%3E %3C/svg%3E"); background-position: 100% 50%; background-repeat: no-repeat; opacity: 0.85; }
+  .vectorMenu h3:hover span, .vectorMenu h3:focus span { color: rgb(34, 34, 34); }
+  .vectorMenu h3:hover span::after, .vectorMenu h3:focus span::after { opacity: 1; }
+  .vectorMenu .menu { list-style: none none; background-color: rgb(255, 255, 255); clear: both; min-width: 100%; position: absolute; top: 2.5em; left: -1px; margin: 0px; border-width: 0px 1px 1px; border-style: solid; border-color: rgb(162, 169, 177); border-image: initial; padding: 0px; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px 0px; text-align: left; opacity: 0; visibility: hidden; transition: opacity 100ms ease 0s; z-index: 2; }
+  .vectorMenu:hover .menu { opacity: 1; visibility: visible; }
+  .vectorMenu .vectorMenuCheckbox:checked ~ .menu { opacity: 1; visibility: visible; }
+  .vectorMenu li { padding: 0px; margin: 0px; text-align: left; line-height: 1em; }
+  .vectorMenu li a { color: rgb(6, 69, 173); display: block; padding: 0.625em; white-space: nowrap; cursor: pointer; font-size: 0.8125em; }
+  .vectorMenu .selected a, .vectorMenu .selected a:visited { color: rgb(34, 34, 34); text-decoration: none; }
+  #mw-head .vectorMenu h3 { background-position: right bottom; float: left; font-size: 100%; height: 2.5em; margin: 0px -1px 0px 0px; padding: 0px 0.5em 0px 0px; }
+  .vectorTabs, .vectorTabs span, #mw-head .vectorMenu h3 { background-image: linear-gradient(rgba(167, 215, 249, 0) 0px, rgb(167, 215, 249) 100%); background-repeat: no-repeat; background-size: 1px 100%; }
+  .vectorMenuCheckbox { cursor: pointer; position: absolute; top: 0px; left: 0px; z-index: 1; opacity: 0; width: 100%; height: 100%; margin: 0px; padding: 0px; display: none; }
+  :not(:checked) > .vectorMenuCheckbox { display: block; }
+  .vectorMenuCheckbox:checked + h3 span::after { transform: scaleY(-1); }
+  .vectorMenuCheckbox:focus + h3 { outline: -webkit-focus-ring-color auto; }
+  @-webkit-keyframes rotate { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+  @keyframes rotate { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+  .vectorTabs .mw-watchlink.icon a { margin: 0px; padding: 3.07692em 0px 0px; display: block; width: 28px; height: 0px; overflow: hidden; background-position: 5px 60%; background-repeat: no-repeat; }
+  .vectorTabs #ca-unwatch.icon a { background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2216%22 height=%2216%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E %3Cdefs%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%23c2edff%22/%3E %3Cstop offset=%22.5%22 stop-color=%22%2368bdff%22/%3E %3Cstop offset=%221%22 stop-color=%22%23fff%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22b%22 x1=%2213.47%22 x2=%224.596%22 y1=%2214.363%22 y2=%223.397%22 xlink:href=%22%23a%22 gradientUnits=%22userSpaceOnUse%22/%3E %3C/defs%3E %3Cpath fill=%22url%28%23b%29%22 stroke=%22%237cb5d1%22 stroke-width=%22.99992%22 d=%22M8.103 1.146l2.175 4.408 4.864.707-3.52 3.431.831 4.845-4.351-2.287-4.351 2.287.831-4.845-3.52-3.431 4.864-.707z%22/%3E %3C/svg%3E"); }
+  .vectorTabs #ca-watch.icon a { background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2216%22 height=%2216%22%3E %3Cpath fill=%22%23fff%22 stroke=%22%237cb5d1%22 stroke-width=%22.99992%22 d=%22M8.103 1.146l2.175 4.408 4.864.707-3.52 3.431.831 4.845-4.351-2.287-4.351 2.287.831-4.845-3.52-3.431 4.864-.707z%22/%3E %3C/svg%3E"); }
+  .vectorTabs #ca-unwatch.icon a:hover, .vectorTabs #ca-unwatch.icon a:focus { background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2216%22 height=%2216%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22%3E %3Cdefs%3E %3ClinearGradient id=%22a%22%3E %3Cstop offset=%220%22 stop-color=%22%23c2edff%22/%3E %3Cstop offset=%22.5%22 stop-color=%22%2368bdff%22/%3E %3Cstop offset=%221%22 stop-color=%22%23fff%22/%3E %3C/linearGradient%3E %3ClinearGradient id=%22b%22 x1=%2213.47%22 x2=%224.596%22 y1=%2214.363%22 y2=%223.397%22 xlink:href=%22%23a%22 gradientUnits=%22userSpaceOnUse%22/%3E %3C/defs%3E %3Cpath fill=%22url%28%23b%29%22 stroke=%22%23c8b250%22 stroke-width=%22.99992%22 d=%22M8.103 1.146l2.175 4.408 4.864.707-3.52 3.431.831 4.845-4.351-2.287-4.351 2.287.831-4.845-3.52-3.431 4.864-.707z%22/%3E %3C/svg%3E"); }
+  .vectorTabs #ca-watch.icon a:hover, .vectorTabs #ca-watch.icon a:focus { background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2216%22 height=%2216%22%3E %3Cpath fill=%22%23fff%22 stroke=%22%23c8b250%22 stroke-width=%22.99992%22 d=%22M8.103 1.146l2.175 4.408 4.864.707-3.52 3.431.831 4.845-4.351-2.287-4.351 2.287.831-4.845-3.52-3.431 4.864-.707z%22/%3E %3C/svg%3E"); }
+  .vectorTabs #ca-unwatch.icon .loading, .vectorTabs #ca-watch.icon .loading { background-image: url("/skins/Vector/images/watch-icon-loading.svg?a3739"); animation: 700ms linear 0s infinite normal none running rotate; outline: 0px; cursor: default; pointer-events: none; background-position: 50% 60%; transform-origin: 50% 57%; }
+  #mw-navigation h2 { position: absolute; top: -9999px; }
+  .mw-jump-link:not(:focus) { display: block; clip: rect(1px, 1px, 1px, 1px); width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; position: absolute !important; }
+  #mw-page-base { height: 5em; background-position: left bottom; background-color: rgb(251, 251, 251); background-image: linear-gradient(rgb(255, 255, 255) 50%, rgb(246, 246, 246) 100%); }
+  #mw-head-base { margin-top: -5em; margin-left: 10em; height: 5em; }
+  #mw-head { position: absolute; top: 0px; right: 0px; width: 100%; }
+  #left-navigation { float: left; margin-left: 10em; margin-top: 2.5em; margin-bottom: -2.5em; }
+  #right-navigation { float: right; margin-top: 2.5em; }
+  #p-logo { width: 10em; height: 160px; }
+  #p-logo a { display: block; width: 10em; height: 160px; background-repeat: no-repeat; background-position: center center; text-decoration: none; }
+  #mw-panel { position: absolute; top: 0px; width: 10em; left: 0px; font-size: inherit; }
+  #mw-panel .portal { margin: 0px 0.6em 0px 0.7em; padding: 0.25em 0px; direction: ltr; }
+  #mw-panel .portal h3 { color: rgb(68, 68, 68); font-weight: normal; margin: 0.5em 0px 0px 0.666667em; padding: 0.25em 0px; cursor: default; border: 0px; font-size: 0.75em; }
+  #mw-panel .portal .body { margin-left: 0.5em; padding-top: 0px; background-image: linear-gradient(to right, transparent 0px, rgb(200, 204, 209) 35%, rgb(200, 204, 209) 70%, transparent 100%); background-repeat: no-repeat; background-size: 100% 1px; }
+  #mw-panel .portal .body ul { list-style: none none; margin: 0px; padding-top: 0.3em; }
+  #mw-panel .portal .body li { margin: 0px; padding: 0.25em 0px; font-size: 0.75em; line-height: 1.125em; overflow-wrap: break-word; }
+  #mw-panel .portal .body li a { color: rgb(6, 69, 173); }
+  #mw-panel .portal .body li a:visited { color: rgb(11, 0, 128); }
+  #mw-panel #p-logo + .portal { background-image: none; margin-top: 1em; }
+  #mw-panel #p-logo + .portal h3 { display: none; }
+  #mw-panel #p-logo + .portal .body { background-image: none; margin-left: 0.5em; }
+  #footer { margin-left: 10em; margin-top: 0px; padding: 0.75em; direction: ltr; }
+  #footer ul { list-style: none none; margin: 0px; padding: 0px; }
+  #footer li { color: rgb(34, 34, 34); margin: 0px; padding: 0.5em 0px; font-size: 0.7em; }
+  #footer-icons { float: right; }
+  #footer-icons li { float: left; margin-left: 0.5em; line-height: 2; text-align: right; }
+  #footer-info li { line-height: 1.4; }
+  #footer-places li { float: left; margin-right: 1em; line-height: 2; }
+  .mw-parser-output .external { background-position: right center; background-repeat: no-repeat; background-image: linear-gradient(transparent, transparent), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22%3E %3Cpath fill=%22%23fff%22 stroke=%22%2336c%22 d=%22M1.5 4.518h5.982V10.5H1.5z%22/%3E %3Cpath fill=%22%2336c%22 d=%22M5.765 1H11v5.39L9.427 7.937l-1.31-1.31L5.393 9.35l-2.69-2.688 2.81-2.808L4.2 2.544z%22/%3E %3Cpath fill=%22%23fff%22 d=%22M9.995 2.004l.022 4.885L8.2 5.07 5.32 7.95 4.09 6.723l2.882-2.88-1.85-1.852z%22/%3E %3C/svg%3E"); padding-right: 13px; }
+}
+
+@media screen and (min-width: 982px) {
+  .mw-body, #mw-head-base, #left-navigation, #mw-data-after-content, #footer { margin-left: 11em; }
+  .mw-body { padding: 1.25em 1.5em 1.5em; }
+  #footer { padding: 1.25em; }
+  #mw-panel { padding-left: 0.5em; }
+  #p-search { margin-right: 1em; }
+  #p-personal { right: 1em; }
+}
+
+@media print {
+  .toc, body { padding: 10px; font-family: "Linux Libertine", Georgia, Times, serif; }
+  .printfooter, #footer, .thumb, table, ol, dl, ul, h3, h4, h5, h6 { font-family: sans-serif; }
+  img { font-family: "Linux Libertine", Georgia, Times, serif; }
+  a { border-bottom: 1px solid rgb(170, 170, 170); }
+  .firstHeading { font-size: 25pt; line-height: 28pt; margin-bottom: 20px; padding-bottom: 5px; }
+  .firstHeading, h2 { overflow: hidden; border-bottom: 2px solid rgb(0, 0, 0); }
+  h3, h4, h5, h6 { margin: 30px 0px 0px; }
+  h2, h3, h4, h5, h6 { padding: 0px; position: relative; }
+  h2 { font-size: 18pt; line-height: 24pt; margin-bottom: 0.25em; }
+  h3 { font-size: 13pt; line-height: 20pt; }
+  h4, h5, h6 { font-size: 10pt; line-height: 15pt; }
+  p { font-size: 10pt; line-height: 16pt; margin-top: 5px; text-align: justify; }
+  p::before { content: ""; display: block; width: 120pt; overflow: hidden; }
+  blockquote { border-left: 2px solid rgb(0, 0, 0); padding-left: 20px; }
+  ol, ul { margin: 10px 0px 0px 1.6em; padding: 0px; }
+  ol li, ul li { padding: 2px 0px; font-size: 10pt; }
+  table ol li, table ul li { font-size: inherit; }
+  .toc { break-before: avoid; break-after: avoid; background: none; border: 0px; display: table; }
+  .toc a { border: 0px; font-weight: normal; }
+  .toc > ul > li { margin-bottom: 4px; font-weight: bold; }
+  .toc ul { margin: 0px; list-style: none; }
+  .toc ul ul { padding-left: 30px; }
+  .toc li.toclevel-1 > a { font-weight: bold; font-size: 10pt; }
+  .mw-jump-link, .toc .tocnumber { display: none; }
+  .printfooter { margin-top: 10px; border-top: 3px solid rgb(0, 0, 0); padding-top: 10px; font-size: 10pt; clear: both; }
+  #footer { margin-top: 12px; border-top: 1px solid rgb(238, 238, 238); padding-top: 5px; }
+  #footer-info { margin: 0px; padding: 0px; }
+  #footer-info li { color: rgb(153, 153, 153); list-style: none; display: block; padding-bottom: 10px; font-size: 10pt; }
+  #footer-info li a { color: rgb(153, 153, 153) !important; }
+  #footer-info-lastmod { color: rgb(0, 0, 0); font-size: 12pt; font-weight: bold; }
+}
+------MultipartBoundary--4c8LsorSkJS8ZI2w8GKWJCbDRpgPfKlGbcye7fawVX----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: https://wiki.videolan.org/load.php?lang=en&modules=site.styles&only=styles&skin=vector
+
+@charset "utf-8";
+
+.folder-icon { background: url("https://wiki.videolan.org/images/Folder_icon.gif") right center no-repeat transparent; padding-right: 18px; }
+
+.hiddenStructure, .if { display: none; }
+
+table.wikitable, table.prettytable { margin: 1em 1em 1em 0px; background: rgb(249, 249, 249); border: 1px solid rgb(170, 170, 170); border-collapse: collapse; }
+
+table.prettytable th, table.prettytable td { border: 1px solid rgb(170, 170, 170); padding: 0.2em; }
+
+table.prettytable th { background: rgb(242, 242, 242); text-align: center; }
+
+table.cellpadding-1px th, table.cellpadding-1px td, table.wikitable.cellpadding-1px th, table.wikitable.cellpadding-1px td, table.prettytable.cellpadding-1px th, table.prettytable.cellpadding-1px td { padding: 1px; }
+
+table.cellpadding-2px th, table.cellpadding-2px td, table.wikitable.cellpadding-2px th, table.wikitable.cellpadding-2px td table.prettytable.cellpadding-2px th, table.prettytable.cellpadding-2px td { padding: 2px; }
+
+table.cellpadding-3px th, table.cellpadding-3px td, table.wikitable.cellpadding-3px th, table.wikitable.cellpadding-3px td, table.prettytable.cellpadding-3px th, table.prettytable.cellpadding-3px td { padding: 3px; }
+
+table.cellpadding-1em th, table.cellpadding-1em td, table.wikitable.cellpadding-1em th, table.wikitable.cellpadding-1em td, table.prettytable.cellpadding-1em th, table.prettytable.cellpadding-1em td { padding: 1em; }
+
+table.wikitable.template-module { width: 325px; float: right; clear: right; margin: 0.5em; padding: 0.2em; font-size: 95%; }
+
+table.wikitable.template-module > * > tr > td { color: black; background: rgb(238, 238, 238); }
+
+.infobox { border: 1px solid rgb(170, 170, 170); color: black; background-color: rgb(249, 249, 249); margin-bottom: 0.5em; margin-left: 1em; padding: 0.2em; float: right; clear: right; }
+
+.infobox td, .infobox th { vertical-align: top; }
+
+.infobox caption { font-size: larger; }
+
+.infobox.sidebox { width: 250px; font-size: 90%; padding: 4px; }
+
+.infobox-singleitem { text-align: start; margin-left: 4em; }
+
+.infobox-multipleitem { text-align: start; margin-left: 2.5em; }
+
+.tocsidebar { font-size: 80%; border: 1px solid rgb(170, 170, 170); padding: 5px; }
+
+.widebox { width: 80%; border: 1px solid rgb(153, 153, 153); background: rgb(248, 248, 248); clear: both; padding: 2px; margin-left: auto; margin-right: auto; }
+
+.nowrap { white-space: nowrap; }
+
+.hatnote { font-style: italic; margin-left: 1.5em; }
+
+#bodyContent pre { white-space: pre-wrap; word-break: break-all; }
+
+.codec-table { font-size: small; text-align: center; width: 100%; margin: 1em auto; border-width: 1px; }
+
+.banner-text { width: 56%; background: none; }
+
+.banner-title { font-size: 162%; margin: 0px; padding: 0.1em; }
+
+.banner-subtitle { top: 0.2em; font-size: 95%; }
+
+.banner { width: 100%; margin: 0px auto 10px; color: black; background-color: rgb(252, 252, 252); border: 1px solid rgb(204, 204, 204); }
+
+.banner-links-col1 { width: 11%; font-size: 95%; }
+
+.banner-links-col2 { width: 14%; font-size: 95%; }
+
+.banner-links-col3 { width: 18%; font-size: 95%; }
+
+[class|="banner-links"] { vertical-align: top; }
+
+div.plainlist ul > li { list-style: none none; }
+
+div.col2 { column-count: 2; }
+
+div.col3 { column-count: 3; }
+
+div.col4 { column-count: 4; }
+
+div.col5 { column-count: 5; }
+
+div.col6 { column-count: 6; }
+
+div.col7 { column-count: 7; }
+
+@media print {
+  #footer-places { display: none; }
+}
+------MultipartBoundary--4c8LsorSkJS8ZI2w8GKWJCbDRpgPfKlGbcye7fawVX------
